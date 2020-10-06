@@ -1,3 +1,5 @@
+
+// DAY 6
 function processData(input) {
     //Enter your code here
     let words = input.split('\n');
