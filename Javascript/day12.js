@@ -29,21 +29,16 @@ constructor(firstName, lastName, id, scores){
         this.scores = scores;
     }
 
-    /*    
-    *   Method Name: calculate
-    *   @return A character denoting the grade.
-    */
-    // Write your method here
-
      calculate(){
-
+         // create sum variable
         let sum = 0;
         for (let n = 0 ; n < this.scores.length; n++){
             sum += this.scores[n]
         };
 
+        // get average
         let avg = sum/this.scores.length;
-
+        // associate average with corresponding grade
         if (avg <= 100 && avg >= 90) {
             return "O"
         } else if (avg < 90 && avg >= 80) {
